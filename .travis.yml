@@ -1,0 +1,16 @@
+language: haskell
+
+ghc:
+  - 7.0
+  - 7.4
+  - 7.6
+  - 7.8
+  - 7.10
+
+install:
+  - cabal update
+  - cabal install -j --only-dependencies
+
+script:
+  - cabal configure
+  - cabal build --ghc-option=-Werror
