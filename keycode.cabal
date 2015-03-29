@@ -4,7 +4,7 @@ synopsis:            Maps web browser keycodes to their corresponding keyboard k
 description:         Keyboard events in web browsers are often represented as keycodes,
                      which (1) are difficult to remember, and (2) sometimes vary from
                      browser to browser. "Web.KeyCode" allows one to look up a key
-                     press's key code and get a plain English description of the key
+                     press's keycode and get a plain English description of the key
                      that was pressed, to reduce confusion.
 homepage:            https://github.com/RyanGlScott/keycode
 bug-reports:         https://github.com/RyanGlScott/keycode/issues
