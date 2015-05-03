@@ -21,7 +21,7 @@ cabal-version:       >=1.10
 
 source-repository head
   type:                git
-  location:            git://github.com/RyanGlScott/keycode.git
+  location:            https://github.com/RyanGlScott/keycode
 
 library
   exposed-modules:     Web.KeyCode
