@@ -28,6 +28,6 @@ install:
 script:
  - if [ -f configure.ac ]; then autoreconf -i; fi
  - cabal configure -v2
- - cabal build --ghc-option=-Werror
+ - cabal build -j1 --ghc-option=-Werror
  - cabal check
  - cabal sdist
