@@ -7,7 +7,7 @@
 
 [Hackage: keycode]:
   http://hackage.haskell.org/package/keycode
-  "text-show package on Hackage"
+  "keycode package on Hackage"
 [Haskell.org]:
   http://www.haskell.org
   "The Haskell Programming Language"
