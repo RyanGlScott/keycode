@@ -194,7 +194,7 @@ keyCodeMap = fromAscList [
     , ( 71, KeyG          )
     , ( 72, KeyH          )
     , ( 73, KeyI          )
-    , ( 74, KeyK          )
+    , ( 74, KeyJ          )
     , ( 75, KeyK          )
     , ( 76, KeyL          )
     , ( 77, KeyM          )
