@@ -11,7 +11,7 @@ bug-reports:         https://github.com/RyanGlScott/keycode/issues
 license:             BSD3
 license-file:        LICENSE
 author:              Ryan Scott
-maintainer:          Ryan Scott <ryan.gl.scott@ku.edu>
+maintainer:          Ryan Scott <ryan.gl.scott@gmail.com>
 copyright:           (C) 2015 Ryan Scott
 stability:           Experimental
 category:            Web
