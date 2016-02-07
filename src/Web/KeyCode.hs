@@ -1,6 +1,6 @@
 {-|
 Module:      Web.KeyCode
-Copyright:   (C) 2015 Ryan Scott
+Copyright:   (C) 2015-2016 Ryan Scott
 License:     BSD-style (see the file LICENSE)
 Maintainer:  Ryan Scott
 Stability:   Experimental
@@ -21,7 +21,7 @@ import Data.Ix (Ix)
 -- | A numeric code representing the value of a pressed 'Key'. Note that a particular
 -- 'Key' may not uniquely map to a particular 'KeyCode', as the implementation of
 -- key codes is browser-dependent.
--- 
+--
 -- /Since: 0.1/
 type KeyCode = Int
 
@@ -29,10 +29,10 @@ type KeyCode = Int
 -- particular key have the same 'KeyCode', so there are not separate constructors for
 -- them. There is also an 'UnknownKey' constructor for keys without a particular
 -- 'KeyCode'.
--- 
+--
 -- Note that the 'Enum' instance does not correspond to the 'KeyCode's, but is simply
 -- provided for convenience.
--- 
+--
 -- /Since: 0.1/
 data Key = Backspace
          | Tab
@@ -138,13 +138,13 @@ data Key = Backspace
 
 -- | Determine the 'Key' that a 'KeyCode' represents. If one cannot be found,
 -- 'UnknownKey' is returned.
--- 
+--
 -- /Since: 0.1/
 keyCodeLookup :: KeyCode -> Key
 keyCodeLookup key = findWithDefault UnknownKey key keyCodeMap
 
 -- | An map of known 'KeyCode's to 'Key's.
--- 
+--
 -- /Since: 0.1/
 keyCodeMap :: IntMap Key
 keyCodeMap = fromAscList [
