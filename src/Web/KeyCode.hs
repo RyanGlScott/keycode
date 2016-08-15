@@ -225,7 +225,7 @@ keyCodeMap = fromAscList [
     , ( 56, Digit8        )
     , ( 57, Digit9        )
     , ( 59, Semicolon     ) -- Firefox oddity
-    , ( 61, Subtract      ) -- Firefox oddity
+    , ( 61, Equals        ) -- Firefox oddity
     , ( 65, KeyA          )
     , ( 66, KeyB          )
     , ( 67, KeyC          )
@@ -286,7 +286,7 @@ keyCodeMap = fromAscList [
     , (124, PrintScreen   )
     , (144, NumLock       )
     , (145, ScrollLock    )
-    , (173, Equals        ) -- Firefox oddity
+    , (173, Subtract      ) -- Firefox oddity
     , (186, Semicolon     )
     , (187, Equals        )
     , (188, Comma         )
