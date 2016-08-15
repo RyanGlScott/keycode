@@ -303,6 +303,8 @@ keyCodeMap = fromAscList [
     , (225, Alt           )
     ]
 
--- | Return 'True' if the given KeyCode matches the given Key.
+-- | Return 'True' if the given 'KeyCode' matches the given 'Key'.
+--
+-- /Since: 0.2.2/
 isKeyCode :: Key -> KeyCode -> Bool
 isKeyCode key code = key == keyCodeLookup code

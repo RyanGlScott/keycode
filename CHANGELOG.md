@@ -1,3 +1,6 @@
+### 0.2.2
+* Add `isKeyCode` function [ryantrinkle]
+
 ### 0.2.1
 * Bugfix: the keycodes for `-` and `=` were swapped on Gecko-based browsers (e.g., Firefox)
 
