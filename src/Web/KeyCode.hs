@@ -190,7 +190,7 @@ keyCodeLookup key = findWithDefault UnknownKey key keyCodeMap
 keyCodeMap :: IntMap Key
 keyCodeMap = fromAscList [
       -- Thanks to David Mauro for his keyCode mapping from the Keypress library
-      -- (https://github.com/dmauro/Keypress/blob/7a58d09f5ff86b9bb37b1740c1cf7c1a20367e47/keypress.coffee#L787-901)
+      -- (https://github.com/dmauro/Keypress/blob/e5e95070d81b998b02b2d7f096267b114a3771d7/keypress.coffee#L802-L916)
       -- Licensed under the Apache License, version 2.0
       (  8, Backspace     )
     , (  9, Tab           )
