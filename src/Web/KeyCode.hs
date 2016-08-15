@@ -27,7 +27,7 @@ of the 'Key' that was pressed, to reduce confusion.
 
 /Since: 0.1/
 -}
-module Web.KeyCode (Key(..), KeyCode, keyCodeLookup, keyCodeMap) where
+module Web.KeyCode (Key(..), KeyCode, keyCodeLookup, keyCodeMap, isKeyCode) where
 
 import Data.IntMap (IntMap, findWithDefault, fromAscList)
 import Data.Ix (Ix)
@@ -302,3 +302,7 @@ keyCodeMap = fromAscList [
     , (224, Command       )
     , (225, Alt           )
     ]
+
+-- | Return 'True' if the given KeyCode matches the given Key.
+isKeyCode :: Key -> KeyCode -> Bool
+isKeyCode key code = key == keyCodeLookup code
