@@ -3,7 +3,7 @@
 [![Hackage Dependencies](https://img.shields.io/hackage-deps/v/keycode.svg)](http://packdeps.haskellers.com/reverse/keycode)
 [![Haskell Programming Language](https://img.shields.io/badge/language-Haskell-blue.svg)][Haskell.org]
 [![BSD3 License](http://img.shields.io/badge/license-BSD3-brightgreen.svg)][tl;dr Legal: BSD3]
-[![Build](https://img.shields.io/travis/RyanGlScott/keycode.svg)](https://travis-ci.org/RyanGlScott/keycode)
+[![Build Status](https://github.com/RyanGlScott/keycode/workflows/Haskell-CI/badge.svg)](https://github.com/RyanGlScott/keycode/actions?query=workflow%3AHaskell-CI)
 
 [Hackage: keycode]:
   http://hackage.haskell.org/package/keycode
