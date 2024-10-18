@@ -1,16 +1,6 @@
-{-# LANGUAGE CPP #-}
-
-#if __GLASGOW_HASKELL__ >= 700
 {-# LANGUAGE DeriveDataTypeable #-}
-#endif
-
-#if __GLASGOW_HASKELL__ >= 702
 {-# LANGUAGE DeriveGeneric #-}
-#endif
-
-#if __GLASGOW_HASKELL__ >= 800
 {-# LANGUAGE DeriveLift #-}
-#endif
 
 {-|
 Module:      Web.KeyCode
@@ -29,18 +19,11 @@ of the 'Key' that was pressed, to reduce confusion.
 -}
 module Web.KeyCode (Key(..), KeyCode, keyCodeLookup, keyCodeMap, isKeyCode) where
 
+import Data.Data (Data)
 import Data.IntMap (IntMap, findWithDefault, fromAscList)
 import Data.Ix (Ix)
-
-#if __GLASGOW_HASKELL__ >= 700
-import Data.Data (Data, Typeable)
-#endif
-#if __GLASGOW_HASKELL__ >= 702
 import GHC.Generics (Generic)
-#endif
-#if __GLASGOW_HASKELL__ >= 800
 import Language.Haskell.TH.Syntax (Lift)
-#endif
 
 -- | A numeric code representing the value of a pressed 'Key'. Note that a particular
 -- 'Key' may not uniquely map to a particular 'KeyCode', as the implementation of
@@ -159,22 +142,15 @@ data Key = Backspace
          | Apostrophe   -- ^ Without Shift: @\'@. With Shift: @"@.
          | UnknownKey
   deriving ( Bounded
+           , Data
            , Enum
            , Eq
+           , Generic
            , Ix
+           , Lift
            , Ord
            , Read
            , Show
-#if __GLASGOW_HASKELL__ >= 700
-           , Data
-           , Typeable
-#endif
-#if __GLASGOW_HASKELL__ >= 702
-           , Generic
-#endif
-#if __GLASGOW_HASKELL__ >= 800
-           , Lift
-#endif
            )
 
 -- | Determine the 'Key' that a 'KeyCode' represents. If one cannot be found,
