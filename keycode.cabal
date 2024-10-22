@@ -1,5 +1,5 @@
 name:                keycode
-version:             0.2.2
+version:             0.2.3
 synopsis:            Maps web browser keycodes to their corresponding keyboard keys
 description:         Keyboard events in web browsers are often represented as keycodes,
                      which (1) are difficult to remember, and (2) sometimes vary from
